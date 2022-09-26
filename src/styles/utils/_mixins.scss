@@ -4,3 +4,27 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin mobile {
+  @media screen and (max-width: 639px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 640px) and (max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 1100px) and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}

@@ -1,0 +1,107 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.team {
+  padding: 0 135px 20px;
+  background-image: url(../images/team-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top 150px left;
+  position: relative;
+  min-height: 920px;
+
+  @include laptop {
+    padding: 0 50px 175px;
+  }
+
+  @include tablet {
+    padding: 0 30px 10px;
+    background-position: top 100px left;
+    min-height: 690px;
+    height: fit-content;
+  }
+
+  @include mobile {
+    padding: 0 34px 110px;
+    background-position: bottom -80px left;
+    background-size: contain;
+    min-height: auto;
+  }
+
+  &__title {
+    margin-bottom: 140px;
+
+    @include tablet {
+      margin-bottom: 177px;
+      grid-column: 1 / 5;
+    }
+
+    @include mobile {
+      margin-bottom: 25px;
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__martin {
+    position: absolute;
+    top: 90px;
+    left: 5%;
+
+    @include tablet {
+      top: 90px;
+      left: -5%;
+      width: 670px;
+      height: 200px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__andy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include tablet {
+      width: 460px;
+      height: 220px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    align-self: end;
+
+    @include tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__img {
+
+    @include tablet {
+      grid-column: 4 / 7;
+      max-height: 400px;
+      width: 100%;
+      object-fit: contain;
+      justify-self: end;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+      grid-column: 1 / 3;
+      width: 100%;
+      object-fit: contain;
+      grid-row: 2 / 3;
+    }
+  }
+}

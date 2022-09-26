@@ -1,0 +1,181 @@
+@import "../utils/_vars.scss";
+@import "../utils/_mixins.scss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+.menu {
+
+  display: none;
+  justify-self: end;
+  z-index: 100;
+
+  &--mobile {
+
+    @include tablet {
+      display: block;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 11;
+
+    & > span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $black;
+      transition: $transition;
+    }
+
+    & > span::before {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $black;
+      transition: $transition;
+      content: "";
+      top: -8px;
+    }
+
+    & > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $black;
+      transition: $transition;
+      content: "";
+      top: 8px;
+    }
+
+    &:hover span {
+      background-color: $red;
+    }
+
+    &:hover span::before {
+      background-color: $red;
+    }
+
+    &:hover span::after {
+      background-color: $red;
+    }
+  }
+
+  &__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 133px 30px;
+    padding-left: 80px;
+    list-style: none;
+    background-color: $blue;
+    transition: $transition;
+    z-index: 10;
+    text-align: left;
+
+    & > li {
+      margin-bottom: 15px;
+
+      @include mobile {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__text {
+    color: $white;
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    transform: rotateZ(270deg);
+    display: flex;
+    gap: 5px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 1px;
+      background-color: #fff;
+      transform: translateY(800%);
+    }
+  }
+
+  &__item {
+    display: block;
+    color: $lightGrey;
+    text-decoration: none;
+    transition: $transition;
+    padding-bottom: 10px;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__toggle {
+    opacity: 0;
+  }
+}
+
+.menu-opened {
+
+  .menu__btn {
+    position: fixed;
+
+    @include mobile {
+      top: 90%;
+      right: 30px;
+    }
+
+    @include tablet {
+      top: 90%;
+      right: 30px;
+    }
+  }
+
+  .menu__btn > span {
+    transform: rotate(45deg);
+    background-color: $white;
+
+  }
+
+  .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: $white;
+
+  }
+
+  .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: $white;
+
+  }
+
+  .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+}

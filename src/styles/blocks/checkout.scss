@@ -1,0 +1,291 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.checkout {
+
+  position: absolute;
+  width: 100vw;
+  // height: 200vh;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 101;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &__window {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    grid-auto-flow: column;
+    justify-content: center;
+    position: absolute;
+
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0);
+    background: $white;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 50px 30px;
+
+    @include tablet {
+      left: 2%;
+      right: 2%;
+      top: 30px;
+      width: auto;
+      transform: translate(0, 0);
+    }
+
+    @include mobile {
+      left: 2%;
+      right: 2%;
+      top: 15px;
+      width: auto;
+      transform: translate(0, 0);
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      padding: 0 18px 40px;
+    }
+
+  }
+
+  &__title {
+    align-self: end;
+    margin-bottom: 50px;
+
+    @include mobile {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+  }
+
+  &__cross {
+    @include mobile {
+      grid-column: 2 / 3;
+      align-self: start;
+      justify-self: end;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__num {
+    justify-self: end;
+
+    @include mobile {
+      justify-self: start;
+    }
+
+    &--1 {
+      grid-row: 2 / 3;
+
+      @include mobile {
+        grid-row: 3 / 4;
+      }
+    }
+
+    &--2 {
+      grid-row: 4 / 5;
+
+      @include mobile {
+        grid-row: 5 / 6;
+      }
+    }
+
+    &--3 {
+      grid-row: 7 / 8;
+
+      @include mobile {
+        grid-row: 8 / 9;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    margin-bottom: 50px;
+
+    @include mobile {
+      grid-column: 2 / 3;
+      width: 150%;
+      transform: translateX(-50%);
+    }
+
+    &--1 {
+      @include mobile {
+        grid-row: 3 / 4;
+        justify-self: start;
+      }
+    }
+
+    &--2 {
+      @include mobile {
+        grid-row: 5 / 6;
+        justify-self: start;
+      }
+    }
+
+    &--3 {
+      @include mobile {
+        grid-row: 8 / 9;
+        justify-self: start;
+      }
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    grid-auto-flow: column;
+    justify-content: center;
+
+    @include mobile {
+      grid-column: 1 / 3;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 35px;
+
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #828282;
+  }
+
+  &__select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #bdbdbd;
+
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #828282;
+    margin-bottom: 80px;
+  }
+
+  &__option {
+    border: none;
+  }
+
+  &__card {
+
+    background-image: url(../images/radio1.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px bottom 18px;
+
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0 30px 10px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #bdbdbd;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #828282;
+
+    &--active {
+      background-image: url(../images/radio2.svg);
+    }
+
+    &--paypal {
+      margin-bottom: 80px;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__subtext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 37px;
+
+    @include mobile {
+      grid-column: 1 / 3;
+      width: 70%;
+    }
+  }
+
+  &__change {
+    font-weight: 400;
+  }
+
+  &__form2 {
+    margin-bottom: 60px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__label {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &--cvv {
+      width: 60%;
+    }
+
+    & > .checkout__input {
+      width: 70%;
+      margin-bottom: 0;
+
+      &--cvv {
+        justify-self: end;
+        width: 50%;
+      }
+
+    }
+
+    & > .checkout__select {
+      width: 30%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    width: 80%;
+    border-color: #bdbdbd;
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.questions {
+  padding: 38px 135px 143px;
+  background-image: url(../images/questions-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 567px;
+
+  @include laptop {
+    padding: 38px 50px 143px;
+  }
+
+  @include tablet {
+    padding: 26px 30px 163px;
+    background-size: 1500px 552px;
+  }
+
+  @include mobile {
+    padding: 45px 34px 100px;
+    background-size: 700px 1003px;
+    background-position: left;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    height: fit-content;
+
+    @include tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    margin-bottom: 30px;
+
+    @include tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__message {
+    margin-bottom: 25px;
+
+    @include tablet {
+      grid-column: 1 / 3;
+    }
+
+    @include tablet {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__form {
+    margin-bottom: 55px;
+
+    @include tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__input {
+    font-weight: 400;
+    background: transparent;
+    padding: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $grey;
+    margin-bottom: 20px;
+    color: $darkGrey;
+    transition: $transition;
+
+    &::placeholder {
+      transition: $transition;
+    }
+
+    &:hover {
+      color: $red;
+      border-bottom: 1px solid $red;
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+
+    &:focus {
+      color: $blue;
+      border-bottom: 1px solid $blue;
+
+      &::placeholder {
+        color: $blue;
+      }
+    }
+  }
+
+  &__button {
+    text-align: center;
+    font-weight: 700;
+    color: $darkGrey;
+    transition: $transition;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $red;
+    }
+
+    @include tablet {
+      grid-column: 2 / 3;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    width: fit-content;
+    top: 80px;
+    right: 30%;
+
+    @include tablet {
+      min-width: 205px;
+      right: 20px;
+    }
+
+    @include mobile {
+      position: static;
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__info-title {
+    color: $grey;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    transition: $transition;
+    color: #000;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+}

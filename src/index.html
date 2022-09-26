@@ -3,11 +3,1578 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Potr Pots</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon" href="./images/Logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anoymous"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Manrope&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page">
+
+    <div class="basket">
+      <div class="basket__window">
+
+        <h2 class="basket__title grid__item grid__item--1-3">Shopping bag</h2>
+
+        <a
+          href="#"
+          class="basket__cross grid__item grid__item--8-8"
+        >
+          <img
+            src="./images/cross.svg"
+            alt="cross"
+            class="basket__icon"
+          >
+        </a>
+
+        <nav class="basket__nav grid__item grid__item--2-7">
+          <p class="basket__text s4 basket__item">Item</p>
+          <p class="basket__text s4 basket__quantity">Quantity</p>
+          <p class="basket__text s4 basket__unit">Unit price</p>
+          <p class="basket__text s4 basket__total">Total price</p>
+        </nav>
+
+        <hr class="basket__line grid__item grid__item--1-8">
+
+        <div class="basket__product grid__item grid__item--1-8">
+
+          <img
+            src="./images/basket1.jpg"
+            alt="img"
+            class="basket__img"
+          >
+
+          <p class="basket__name basket__text s4">Large POTR Pot</p>
+
+          <div class="basket__num">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="basket__svg minus1"
+              id="minus1"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="17"
+                fill="#E0E0E0"
+                class="basket__cir"
+              >
+              </circle>
+              <rect
+                x="13.25"
+                y="17.25"
+                width="6.5"
+                height="0.5"
+                fill="#E0E0E0"
+                stroke="#333333"
+                stroke-width="0.5"
+                class="basket__rect"
+              >
+              </rect>
+            </svg>
+
+
+            <p class="basket__quant s5"> 
+              <span class="basket__change1">0</span>
+              orders
+            </p>
+
+
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="basket__svg mobilePlus1"
+              id="mobilePlus1"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="17"
+                fill="#E0E0E0"
+                class="basket__cir"
+              >
+              </circle>
+              <rect
+                x="13.25"
+                y="17.25"
+                width="6.5"
+                height="0.5"
+                fill="#E0E0E0"
+                stroke="#333333"
+                stroke-width="0.5"
+                class="basket__rect"
+              >
+              </rect>
+              <rect
+                x="16.25"
+                y="20.75"
+                width="6.5"
+                height="0.5"
+                transform="rotate(-90 16.25 20.75)"
+                fill="#E0E0E0"
+                stroke="#333333"
+                stroke-width="0.5"
+                class="basket__rect"
+              >
+              </rect>
+            </svg>
+          </div>
+
+          <p class="basket__unit-price basket__unit-price1 basket__text s4">$ 7,50</p>
+          
+          <p class="basket__total-price basket__total-price1 basket__text s4">$ 0</p>
+
+          <svg
+            width="66"
+            height="67"
+            viewBox="0 0 66 67"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="basket__cross2"
+          >
+            <circle
+              r="23.4174"
+              transform="matrix(0.704604 -0.709601 0.704604 0.709601 33 33.2339)"
+              fill="#E0E0E0"
+            >
+            </circle>
+            <rect
+              opacity="0.9"
+              width="14.9475"
+              height="2.9894"
+              transform="matrix(0.702826 -0.711362 0.706378 0.707835 26.6913 37.4927)"
+              fill="#333"
+            >
+            </rect>
+            <rect
+              width="14.947"
+              height="2.98951"
+              transform="matrix(0.706378 0.707835 -0.702826 0.711362 28.7713 26.8809)"
+              fill="#333"
+            >
+            </rect>
+          </svg>
+        </div>
+
+
+        <hr class="basket__line grid__item grid__item--1-8">
+
+
+        <div class="basket__product grid__item grid__item--1-8">
+
+          <img
+            src="./images/basket2.jpg"
+            alt="img"
+            class="basket__img"
+          >
+
+          <p class="basket__name basket__text s4">Small POTR Pot</p>
+
+          <div class="basket__num">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="basket__svg minus2"
+              id="minus2"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="17"
+                fill="#E0E0E0"
+                class="basket__cir"
+              >
+              </circle>
+              <rect
+                x="13.25"
+                y="17.25"
+                width="6.5"
+                height="0.5"
+                fill="#E0E0E0"
+                stroke="#333333"
+                stroke-width="0.5"
+                class="basket__rect"
+              >
+              </rect>
+            </svg>
+
+
+            <p class="basket__quant s5"> 
+              <span class="basket__change2">0</span>
+              orders
+            </p>
+
+
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="basket__svg mobilePlus2"
+              id="mobilePlus2"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="17"
+                fill="#E0E0E0"
+                class="basket__cir"
+              >
+              </circle>
+              <rect
+                x="13.25"
+                y="17.25"
+                width="6.5"
+                height="0.5"
+                fill="#E0E0E0"
+                stroke="#333333"
+                stroke-width="0.5"
+                class="basket__rect"
+              >
+              </rect>
+              <rect
+                x="16.25"
+                y="20.75"
+                width="6.5"
+                height="0.5"
+                transform="rotate(-90 16.25 20.75)"
+                fill="#E0E0E0"
+                stroke="#333333"
+                stroke-width="0.5"
+                class="basket__rect"
+              >
+              </rect>
+            </svg>
+          </div>
+
+          <p class="basket__unit-price basket__unit-price2 basket__text s4">$ 5,50</p>
+          
+          <p class="basket__total-price basket__total-price2 basket__text s4">$ 0</p>
+
+          <svg
+            width="66"
+            height="67"
+            viewBox="0 0 66 67"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="basket__cross2"
+          >
+            <circle
+              r="23.4174"
+              transform="matrix(0.704604 -0.709601 0.704604 0.709601 33 33.2339)"
+              fill="#E0E0E0"
+            >
+            </circle>
+            <rect
+              opacity="0.9"
+              width="14.9475"
+              height="2.9894"
+              transform="matrix(0.702826 -0.711362 0.706378 0.707835 26.6913 37.4927)"
+              fill="#333"
+            >
+            </rect>
+            <rect
+              width="14.947"
+              height="2.98951"
+              transform="matrix(0.706378 0.707835 -0.702826 0.711362 28.7713 26.8809)"
+              fill="#333"
+            >
+            </rect>
+          </svg>
+        </div>
+
+
+
+        <hr class="basket__line grid__item grid__item--1-8">
+
+        
+
+        <p class="basket__finish-price basket__text s4">$ 0</p>
+
+        <a
+          href="#"
+          class="button basket__button buttontext"
+          id="button1"
+        >
+          <span>
+            CHECKOUT &nbsp;
+          </span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="checkout">
+      <div class="checkout__window">
+
+        <h2 class="checkout__title grid__item grid__item--2-3">checkout</h2>
+
+        <a href="#" class="checkout__cross grid__item grid__item--8-8">
+          <img
+            src="./images/cross.svg"
+            alt="cross"
+            class="checkout__icon"
+          >
+        </a>
+
+        <img
+          src="./images/num1.svg"
+          alt="num"
+          class="checkout__num checkout__num--1 grid__item grid__item--1-1"
+        >
+
+        <p class="checkout__subtitle checkout__subtitle--1 s4 grid__item grid__item--2-3">Provide your address</p>
+
+        <form action="#" class="checkout__form grid__item grid__item--2-7">
+
+          <label for="first" class="grid__item grid__item--1-3">
+
+            <input
+              class="checkout__input"
+              id="first"
+              required
+              placeholder="First name"
+              type="text"
+            >
+          </label>
+
+          <label for="last" class="grid__item grid__item--4-6">
+
+            <input
+              class="checkout__input"
+              id="last"
+              required
+              placeholder="Last name"
+              type="text"
+            >
+          </label>
+
+          <label for="email" class="grid__item grid__item--1-6">
+
+            <input
+              class="checkout__input"
+              id="email"
+              required
+              placeholder="Email"
+              type="email"
+            >
+          </label>
+
+          <label for="street" class="grid__item grid__item--1-3">
+
+            <input
+              class="checkout__input"
+              id="street"
+              required
+              placeholder="Street"
+              type="text"
+            >
+          </label>
+
+          <label for="city" class="grid__item grid__item--4-6">
+
+            <input
+              class="checkout__input"
+              id="city"
+              required
+              placeholder="City"
+              type="text"
+            >
+          </label>
+
+          <label for="house" class="grid__item grid__item--1-3">
+
+            <input
+              class="checkout__input"
+              id="house"
+              required
+              placeholder="House number"
+              type="text"
+            >
+          </label>
+
+          <label for="country" class="grid__item grid__item--4-6">
+
+            <select
+              name="Country"
+              id="country"
+              class="checkout__select"
+            >
+              <option value="0" class="checkout__option">Ukraine</option>
+              <option value="1" class="checkout__option">Poland</option>
+              <option value="2" class="checkout__option">Slovakia</option>
+              <option value="3" class="checkout__option">Latvia</option>
+            </select>
+          </label>
+
+        </form>
+
+        <img
+          src="./images/num2.svg"
+          alt="num"
+          class="checkout__num checkout__num--2 grid__item grid__item--1-1"
+        >
+
+        <p class="checkout__subtitle s4 grid__item grid__item--2-3">Select a payment method</p>
+
+        <div class="checkout__card checkout__card--active grid__item grid__item--2-7" id="card">
+
+
+          <img
+            src="./images/master.png"
+            alt="card"
+            class="chechout__card-icon"
+          >
+
+          <img
+            src="./images/visa.png"
+            alt="card"
+            class="chechout__card-icon"
+          >
+
+          <p class="checkout__card-text">MasterCard / Visa</p>
+        </div>
+
+        <div class="checkout__card checkout__card--paypal grid__item grid__item--2-7" id="paypal">
+
+          <img
+            src="./images/paypal.png"
+            alt="card"
+            class="chechout__card-icon"
+          >
+
+          <p class="checkout__card-text">PayPal</p>
+        </div>
+
+        <img
+          src="./images/num3.svg"
+          alt="num"
+          class="checkout__num checkout__num--3 grid__item grid__item--1-1"
+        >
+
+        <p class="checkout__subtitle s4 grid__item grid__item--2-3">Your payment</p>
+
+        <p class="checkout__subtext s4 grid__item grid__item--2-4">
+          Amount:
+          <span class="checkout__change s4">USD 7,50</span>
+        </p>
+
+        <form
+          action="#"
+          class="checkout__form2 grid__item grid__item--2-7"
+          id="form2"
+        >
+
+          <label for="name" class="checkout__label s4">
+            Name on card: 
+            <input
+              type="text"
+              class="checkout__input"
+              placeholder="Your name"
+              required
+              id="name"
+            >
+          </label>
+
+          <label for="card-number" class="checkout__label s4">
+            Card number:
+            <input
+              type="tel"
+              class="checkout__input"
+              placeholder="**** **** **** ****"
+              required
+              minlength="16"
+              maxlength="16"
+              id="card-number"
+            >
+          </label>
+
+          <label for="number" class="checkout__label s4">
+            Expiration date:
+            <select id="month" class="checkout__select">
+              <option value="0" class="checkout__option">1</option>
+              <option value="1" class="checkout__option">2</option>
+              <option value="2" class="checkout__option">3</option>
+              <option value="3" class="checkout__option">4</option>
+              <option value="4" class="checkout__option">5</option>
+              <option value="5" class="checkout__option">6</option>
+              <option value="6" class="checkout__option">7</option>
+              <option value="7" class="checkout__option">8</option>
+              <option value="8" class="checkout__option">9</option>
+              <option value="9" class="checkout__option">10</option>
+              <option value="10" class="checkout__option">11</option>
+              <option value="11" class="checkout__option">12</option>
+            </select>
+
+            <select id="year" class="checkout__select">
+              <option value="0" class="checkout__option">2022</option>
+              <option value="1" class="checkout__option">2023</option>
+              <option value="2" class="checkout__option">2024</option>
+              <option value="3" class="checkout__option">2025</option>
+              <option value="4" class="checkout__option">2026</option>
+              <option value="5" class="checkout__option">2027</option>
+              <option value="6" class="checkout__option">2028</option>
+              <option value="7" class="checkout__option">2029</option>
+            </select>
+          </label>
+
+          <label for="number" class="checkout__label checkout__label--cvv s4">
+            CVC:
+            <input
+              type="tel"
+              class="checkout__input checkout__input--cvv"
+              placeholder="***"
+              required
+              minlength="3"
+              maxlength="3"
+              id="number"
+            >
+          </label>
+
+        </form>
+
+        <button
+          form="form2"
+          href="#"
+          class="button checkout__button buttontext grid__item grid__item--2-5"
+        >
+          <span>
+            Submit
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__wrapper grid">
+
+        <div class="header__top grid__item grid__item--1-12">
+          <a href="#" class="header__link">
+            <img
+              src="./images/Logo.svg"
+              alt="logo"
+              class="header__logo"
+            >
+          </a>
+
+          <nav class="header__nav">
+            
+            <a href="#features" class="header__link s3">Features</a>
+
+            <a href="#about" class="header__link s3">About us</a>
+
+            <a href="#materials" class="header__link s3">Materials</a>
+
+            <a href="#message" class="header__link s3">Message us</a>
+          </nav>
+
+
+          <a href="#" class="header__link header__link--bag">
+            <img
+              src="./images/bag.svg"
+              alt="logo"
+              class="header__logo"
+            >
+          </a>
+
+          <div class="header__menu menu menu--mobile grid__item grid__item--4-5" id="menu-container">
+            <a id="header-burger" class="menu__btn">
+              <span></span>
+            </a>
+            <ul class="menu__box">
+  
+              <li>
+                <a
+                  class="menu__item header__link s3"
+                  href="#basket"
+                  id="item1"
+                >
+                BASKET
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="menu__item header__link s3"
+                  href="#features"
+                  id="item2"
+                >
+                FEATURES
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="menu__item header__link s3"
+                  href="#materials"
+                  id="item3"
+                >
+                MATERIALS
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="menu__item header__link s3"
+                  href="#about"
+                  id="item4"
+                >
+                ABOUT US
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="menu__item header__link s3"
+                  href="#footer"
+                  id="item5"
+                >
+                GET IN TOUCH
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="menu__item header__link s3"
+                  href="#message"
+                  id="item6"
+                >
+                MESSAGE US
+                </a>
+              </li>
+
+              <p class="menu__text s5">CLOSE</p>
+              
+            </ul>
+          </div>
+
+        </div>
+
+        <img
+          src="./images/header-title.png"
+          alt="title"
+          class="header__title grid__item grid__item--2-6"
+        >
+
+        <p class="header__price s1-36 grid__item grid__item--5-6">$ 7,50</p>
+
+        <p class="header__text s4 grid__item grid__item--5-6">Get the second order in half price</p>
+
+        <a href="#" class="button header__button buttontext grid__item grid__item--4-6">
+          <span>
+            BUY NOW &nbsp;
+            <svg
+              width="26"
+              height="8"
+              viewBox="0 0 26 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                fill="black"
+                class="button__svg"
+              >
+              </path>
+            </svg>
+          </span>
+        </a>
+
+        <a href="#" class="header__left grid__item grid__item--1-1">
+          <svg
+            width="10"
+            height="132"
+            viewBox="0 0 10 132"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="header__svg"
+          >
+            <path
+              d="M1 0.839999L9.64 0.84L9.64 1.65L2.374 5.046L9.64 8.424L9.64 9.246L1.006 9.246L1.006 8.406L7.672 8.406L1 5.328L1 4.758L7.672 1.686L1 1.686L1 0.839999ZM0.819999 13.6358C0.819999 12.9918 0.965999 12.4418 1.258 11.9858C1.55 11.5298 1.954 11.1798 2.47 10.9358C2.986 10.6918 3.578 10.5698 4.246 10.5698C4.926 10.5698 5.522 10.6938 6.034 10.9418C6.546 11.1898 6.944 11.5418 7.228 11.9978C7.516 12.4578 7.66 13.0038 7.66 13.6358C7.66 14.2838 7.514 14.8358 7.222 15.2918C6.934 15.7518 6.532 16.1018 6.016 16.3418C5.504 16.5858 4.914 16.7078 4.246 16.7078C3.566 16.7078 2.968 16.5858 2.452 16.3418C1.94 16.0978 1.54 15.7458 1.252 15.2858C0.963999 14.8258 0.819999 14.2758 0.819999 13.6358ZM1.666 13.6358C1.666 14.3558 1.904 14.8918 2.38 15.2438C2.86 15.5958 3.482 15.7718 4.246 15.7718C5.03 15.7718 5.654 15.5938 6.118 15.2378C6.582 14.8858 6.814 14.3518 6.814 13.6358C6.814 13.1518 6.704 12.7518 6.484 12.4358C6.268 12.1238 5.966 11.8898 5.578 11.7338C5.194 11.5818 4.75 11.5058 4.246 11.5058C3.466 11.5058 2.84 11.6858 2.368 12.0458C1.9 12.4058 1.666 12.9358 1.666 13.6358ZM0.999999 18.0314L7.48 18.0314L7.48 18.8234L5.92 18.8234L6.124 18.6674C6.316 18.7394 6.492 18.8334 6.652 18.9494C6.816 19.0654 6.95 19.1914 7.054 19.3274C7.202 19.4954 7.314 19.6914 7.39 19.9154C7.47 20.1394 7.516 20.3654 7.528 20.5934C7.544 20.8214 7.528 21.0294 7.48 21.2174L6.652 21.2174C6.712 20.9814 6.726 20.7234 6.694 20.4434C6.662 20.1634 6.55 19.9054 6.358 19.6694C6.19 19.4534 5.988 19.2914 5.752 19.1834C5.52 19.0754 5.272 19.0034 5.008 18.9674C4.748 18.9314 4.49 18.9134 4.234 18.9134L0.999999 18.9134L0.999999 18.0314ZM0.819999 24.9804C0.819999 24.3484 0.959999 23.8004 1.24 23.3364C1.52 22.8764 1.914 22.5184 2.422 22.2624C2.93 22.0064 3.526 21.8784 4.21 21.8784C4.918 21.8784 5.53 22.0044 6.046 22.2564C6.562 22.5084 6.96 22.8624 7.24 23.3184C7.52 23.7784 7.66 24.3204 7.66 24.9444C7.66 25.5844 7.512 26.1304 7.216 26.5824C6.924 27.0344 6.504 27.3764 5.956 27.6084C5.408 27.8404 4.754 27.9464 3.994 27.9264L3.994 27.0264L4.306 27.0264C5.146 27.0104 5.78 26.8284 6.208 26.4804C6.636 26.1364 6.85 25.6324 6.85 24.9684C6.85 24.2724 6.624 23.7384 6.172 23.3664C5.72 22.9984 5.076 22.8144 4.24 22.8144C3.424 22.8144 2.79 22.9984 2.338 23.3664C1.89 23.7384 1.666 24.2644 1.666 24.9444C1.666 25.4084 1.772 25.8124 1.984 26.1564C2.2 26.5044 2.51 26.7784 2.914 26.9784L2.596 27.8004C2.032 27.5444 1.594 27.1664 1.282 26.6664C0.973999 26.1704 0.819999 25.6084 0.819999 24.9804ZM3.994 22.5024L4.732 22.5024L4.732 27.4524L3.994 27.4524L3.994 22.5024ZM0.819999 33.5143C0.819999 33.0263 0.907999 32.6163 1.084 32.2843C1.26 31.9563 1.494 31.7103 1.786 31.5463C2.078 31.3823 2.396 31.3003 2.74 31.3003C3.092 31.3003 3.392 31.3703 3.64 31.5103C3.892 31.6543 4.098 31.8483 4.258 32.0923C4.418 32.3403 4.54 32.6263 4.624 32.9503C4.704 33.2783 4.774 33.6403 4.834 34.0363C4.898 34.4363 4.952 34.8263 4.996 35.2063C5.044 35.5903 5.09 35.9263 5.134 36.2143L4.942 35.9023C5.582 35.9143 6.056 35.7903 6.364 35.5303C6.672 35.2703 6.826 34.8183 6.826 34.1743C6.826 33.7303 6.726 33.3543 6.526 33.0463C6.326 32.7423 6.01 32.5283 5.578 32.4043L5.83 31.5463C6.41 31.6943 6.86 31.9923 7.18 32.4403C7.5 32.8883 7.66 33.4703 7.66 34.1863C7.66 34.7783 7.548 35.2803 7.324 35.6923C7.104 36.1083 6.784 36.4023 6.364 36.5743C6.176 36.6543 5.966 36.7063 5.734 36.7303C5.502 36.7543 5.266 36.7663 5.026 36.7663L0.999998 36.7663L0.999998 35.9803L2.626 35.9803L2.53 36.2083C1.974 35.9883 1.55 35.6463 1.258 35.1823C0.965998 34.7183 0.819998 34.1623 0.819999 33.5143ZM1.582 33.6163C1.582 34.0283 1.656 34.3883 1.804 34.6963C1.952 35.0043 2.154 35.2523 2.41 35.4403C2.67 35.6283 2.962 35.7503 3.286 35.8063C3.494 35.8543 3.722 35.8803 3.97 35.8843C4.222 35.8883 4.41 35.8903 4.534 35.8903L4.36 36.2263C4.32 35.9263 4.28 35.6003 4.24 35.2483C4.2 34.9003 4.154 34.5563 4.102 34.2163C4.05 33.8803 3.988 33.5763 3.916 33.3043C3.864 33.1203 3.79 32.9423 3.694 32.7703C3.602 32.5983 3.478 32.4563 3.322 32.3443C3.166 32.2363 2.972 32.1823 2.74 32.1823C2.552 32.1823 2.37 32.2283 2.194 32.3203C2.018 32.4163 1.872 32.5683 1.756 32.7763C1.64 32.9883 1.582 33.2683 1.582 33.6163ZM0.819998 41.2383C0.819998 40.6423 0.969998 40.1383 1.27 39.7263C1.574 39.3143 1.984 39.0023 2.5 38.7903C3.02 38.5783 3.602 38.4723 4.246 38.4723C4.902 38.4723 5.486 38.5783 5.998 38.7903C6.514 39.0063 6.92 39.3223 7.216 39.7383C7.512 40.1543 7.66 40.6663 7.66 41.2743C7.66 41.8663 7.51 42.3743 7.21 42.7983C6.91 43.2223 6.502 43.5463 5.986 43.7703C5.47 43.9983 4.89 44.1123 4.246 44.1123C3.598 44.1123 3.016 43.9983 2.5 43.7703C1.984 43.5423 1.574 43.2143 1.27 42.7863C0.969998 42.3583 0.819998 41.8423 0.819998 41.2383ZM0.999998 38.3223L9.64 38.3223L9.64 39.2103L5.878 39.2103L5.878 39.1143L0.999998 39.1143L0.999998 38.3223ZM1.642 41.1483C1.642 41.6003 1.756 41.9763 1.984 42.2763C2.212 42.5763 2.522 42.8003 2.914 42.9483C3.31 43.1003 3.754 43.1763 4.246 43.1763C4.734 43.1763 5.174 43.1023 5.566 42.9543C5.958 42.8063 6.268 42.5803 6.496 42.2763C6.724 41.9763 6.838 41.5943 6.838 41.1303C6.838 40.6783 6.728 40.3023 6.508 40.0023C6.288 39.7063 5.982 39.4843 5.59 39.3363C5.202 39.1883 4.754 39.1143 4.246 39.1143C3.746 39.1143 3.298 39.1883 2.902 39.3363C2.51 39.4843 2.202 39.7083 1.978 40.0083C1.754 40.3083 1.642 40.6883 1.642 41.1483ZM0.819998 48.1358C0.819998 47.4918 0.965998 46.9418 1.258 46.4858C1.55 46.0298 1.954 45.6798 2.47 45.4358C2.986 45.1918 3.578 45.0698 4.246 45.0698C4.926 45.0698 5.522 45.1938 6.034 45.4418C6.546 45.6898 6.944 46.0418 7.228 46.4978C7.516 46.9578 7.66 47.5038 7.66 48.1358C7.66 48.7838 7.514 49.3358 7.222 49.7918C6.934 50.2518 6.532 50.6018 6.016 50.8418C5.504 51.0858 4.914 51.2078 4.246 51.2078C3.566 51.2078 2.968 51.0858 2.452 50.8418C1.94 50.5978 1.54 50.2458 1.252 49.7858C0.963998 49.3258 0.819998 48.7758 0.819998 48.1358ZM1.666 48.1358C1.666 48.8558 1.904 49.3918 2.38 49.7438C2.86 50.0958 3.482 50.2718 4.246 50.2718C5.03 50.2718 5.654 50.0938 6.118 49.7378C6.582 49.3858 6.814 48.8518 6.814 48.1358C6.814 47.6518 6.704 47.2518 6.484 46.9358C6.268 46.6238 5.966 46.3898 5.578 46.2338C5.194 46.0818 4.75 46.0058 4.246 46.0058C3.466 46.0058 2.84 46.1858 2.368 46.5458C1.9 46.9058 1.666 47.4358 1.666 48.1358ZM0.837998 55.0094C0.837998 54.6214 0.897998 54.2814 1.018 53.9894C1.138 53.7014 1.3 53.4554 1.504 53.2514C1.708 53.0514 1.94 52.8894 2.2 52.7654C2.464 52.6414 2.742 52.5514 3.034 52.4954C3.33 52.4394 3.624 52.4114 3.916 52.4114L7.48 52.4114L7.48 53.2994L4.174 53.2994C3.818 53.2994 3.488 53.3334 3.184 53.4014C2.88 53.4694 2.614 53.5774 2.386 53.7254C2.162 53.8774 1.988 54.0714 1.864 54.3074C1.74 54.5474 1.678 54.8374 1.678 55.1774C1.678 55.4894 1.732 55.7634 1.84 55.9994C1.948 56.2394 2.102 56.4394 2.302 56.5994C2.506 56.7634 2.752 56.8874 3.04 56.9714C3.332 57.0554 3.66 57.0974 4.024 57.0974L3.886 57.7214C3.222 57.7214 2.664 57.6054 2.212 57.3734C1.76 57.1414 1.418 56.8214 1.186 56.4134C0.953998 56.0054 0.837998 55.5374 0.837998 55.0094ZM0.999998 57.1874L2.596 57.1874L2.596 57.0974L7.48 57.0974L7.48 57.9794L0.999997 57.9794L0.999998 57.1874ZM0.999997 63.1844C0.923997 62.8204 0.893997 62.4604 0.909997 62.1044C0.925997 61.7524 1.002 61.4364 1.138 61.1564C1.274 60.8804 1.486 60.6704 1.774 60.5264C2.014 60.4104 2.256 60.3464 2.5 60.3344C2.748 60.3264 3.03 60.3224 3.346 60.3224L9.28 60.3224L9.28 61.1984L3.382 61.1984C3.11 61.1984 2.882 61.2004 2.698 61.2044C2.518 61.2124 2.358 61.2544 2.218 61.3304C1.95 61.4744 1.79 61.7024 1.738 62.0144C1.686 62.3304 1.698 62.7204 1.774 63.1844L0.999997 63.1844ZM6.724 58.9364L7.48 58.9364L7.48 63.1844L6.724 63.1844L6.724 58.9364ZM0.999997 69.2658L9.64 69.2658L9.64 72.6018C9.64 72.6858 9.636 72.7798 9.628 72.8838C9.624 72.9918 9.612 73.0998 9.592 73.2078C9.524 73.6598 9.366 74.0418 9.118 74.3538C8.874 74.6698 8.566 74.9078 8.194 75.0678C7.822 75.2318 7.41 75.3138 6.958 75.3138C6.51 75.3138 6.1 75.2318 5.728 75.0678C5.356 74.9038 5.046 74.6638 4.798 74.3478C4.554 74.0358 4.398 73.6558 4.33 73.2078C4.314 73.0998 4.302 72.9918 4.294 72.8838C4.286 72.7798 4.282 72.6858 4.282 72.6018L4.282 70.1478L0.999997 70.1478L0.999997 69.2658ZM5.122 70.1478L5.122 72.5778C5.122 72.6498 5.126 72.7338 5.134 72.8298C5.142 72.9258 5.156 73.0198 5.176 73.1118C5.24 73.4078 5.362 73.6498 5.542 73.8378C5.722 74.0298 5.936 74.1718 6.184 74.2638C6.432 74.3598 6.69 74.4078 6.958 74.4078C7.226 74.4078 7.484 74.3598 7.732 74.2638C7.984 74.1718 8.2 74.0298 8.38 73.8378C8.56 73.6498 8.682 73.4078 8.746 73.1118C8.766 73.0198 8.778 72.9258 8.782 72.8298C8.79 72.7338 8.794 72.6498 8.794 72.5778L8.794 70.1478L5.122 70.1478ZM0.819996 80.006C0.819997 79.146 1.01 78.42 1.39 77.828C1.774 77.236 2.304 76.788 2.98 76.484C3.656 76.18 4.436 76.028 5.32 76.028C6.204 76.028 6.984 76.18 7.66 76.484C8.336 76.788 8.864 77.236 9.244 77.828C9.628 78.42 9.82 79.146 9.82 80.006C9.82 80.87 9.628 81.596 9.244 82.184C8.864 82.776 8.336 83.224 7.66 83.528C6.984 83.836 6.204 83.99 5.32 83.99C4.436 83.99 3.656 83.836 2.98 83.528C2.304 83.224 1.774 82.776 1.39 82.184C1.01 81.596 0.819996 80.87 0.819996 80.006ZM1.666 80.006C1.666 80.682 1.82 81.246 2.128 81.698C2.436 82.15 2.864 82.488 3.412 82.712C3.964 82.94 4.6 83.054 5.32 83.054C6.04 83.054 6.674 82.94 7.222 82.712C7.77 82.488 8.198 82.15 8.506 81.698C8.814 81.246 8.97 80.682 8.974 80.006C8.974 79.33 8.82 78.768 8.512 78.32C8.204 77.872 7.774 77.534 7.222 77.306C6.674 77.082 6.04 76.968 5.32 76.964C4.6 76.96 3.966 77.07 3.418 77.294C2.874 77.522 2.446 77.862 2.134 78.314C1.826 78.766 1.67 79.33 1.666 80.006ZM0.999996 87.2552L8.794 87.2552L8.794 84.2372L9.64 84.2372L9.64 91.1552L8.794 91.1552L8.794 88.1372L0.999996 88.1372L0.999996 87.2552ZM0.999996 92.1173L9.64 92.1173L9.64 95.4533C9.64 95.5373 9.636 95.6313 9.628 95.7353C9.624 95.8433 9.612 95.9513 9.592 96.0593C9.524 96.5113 9.366 96.8933 9.118 97.2053C8.874 97.5213 8.566 97.7593 8.194 97.9193C7.822 98.0833 7.41 98.1653 6.958 98.1653C6.306 98.1653 5.74 97.9933 5.26 97.6493C4.78 97.3053 4.478 96.8133 4.354 96.1733L4.282 95.8673L4.282 92.9993L0.999996 92.9993L0.999996 92.1173ZM0.999996 97.3493L4.516 95.6453L4.84 96.4913L0.999996 98.3633L0.999996 97.3493ZM5.122 92.9993L5.122 95.4293C5.122 95.5013 5.126 95.5853 5.134 95.6813C5.142 95.7773 5.156 95.8713 5.176 95.9633C5.24 96.2593 5.362 96.5013 5.542 96.6893C5.722 96.8813 5.936 97.0233 6.184 97.1153C6.432 97.2113 6.69 97.2593 6.958 97.2593C7.226 97.2593 7.484 97.2113 7.732 97.1153C7.984 97.0233 8.2 96.8813 8.38 96.6893C8.56 96.5013 8.682 96.2593 8.746 95.9633C8.766 95.8713 8.778 95.7773 8.782 95.6813C8.79 95.5853 8.794 95.5013 8.794 95.4293L8.794 92.9993L5.122 92.9993ZM0.999996 102.09L9.64 102.09L9.64 105.426C9.64 105.51 9.636 105.604 9.628 105.708C9.624 105.816 9.612 105.924 9.592 106.032C9.524 106.484 9.366 106.866 9.118 107.178C8.874 107.494 8.566 107.732 8.194 107.892C7.822 108.056 7.41 108.138 6.958 108.138C6.51 108.138 6.1 108.056 5.728 107.892C5.356 107.728 5.046 107.488 4.798 107.172C4.554 106.86 4.398 106.48 4.33 106.032C4.314 105.924 4.302 105.816 4.294 105.708C4.286 105.604 4.282 105.51 4.282 105.426L4.282 102.972L0.999995 102.972L0.999996 102.09ZM5.122 102.972L5.122 105.402C5.122 105.474 5.126 105.558 5.134 105.654C5.142 105.75 5.156 105.844 5.176 105.936C5.24 106.232 5.362 106.474 5.542 106.662C5.722 106.854 5.936 106.996 6.184 107.088C6.432 107.184 6.69 107.232 6.958 107.232C7.226 107.232 7.484 107.184 7.732 107.088C7.984 106.996 8.2 106.854 8.38 106.662C8.56 106.474 8.682 106.232 8.746 105.936C8.766 105.844 8.778 105.75 8.782 105.654C8.79 105.558 8.794 105.474 8.794 105.402L8.794 102.972L5.122 102.972ZM0.819995 112.83C0.819995 111.97 1.01 111.244 1.39 110.652C1.774 110.06 2.304 109.612 2.98 109.308C3.656 109.004 4.436 108.852 5.32 108.852C6.204 108.852 6.984 109.004 7.66 109.308C8.336 109.612 8.864 110.06 9.244 110.652C9.628 111.244 9.82 111.97 9.82 112.83C9.82 113.694 9.628 114.42 9.244 115.008C8.864 115.6 8.336 116.048 7.65999 116.352C6.984 116.66 6.204 116.814 5.32 116.814C4.436 116.814 3.65599 116.66 2.97999 116.352C2.304 116.048 1.774 115.6 1.39 115.008C1.01 114.42 0.819995 113.694 0.819995 112.83ZM1.666 112.83C1.666 113.506 1.82 114.07 2.128 114.522C2.436 114.974 2.864 115.312 3.412 115.536C3.964 115.764 4.6 115.878 5.32 115.878C6.04 115.878 6.674 115.764 7.222 115.536C7.77 115.312 8.198 114.974 8.506 114.522C8.814 114.07 8.97 113.506 8.974 112.83C8.974 112.154 8.82 111.592 8.512 111.144C8.204 110.696 7.774 110.358 7.222 110.13C6.674 109.906 6.04 109.792 5.32 109.788C4.6 109.784 3.966 109.894 3.418 110.118C2.874 110.346 2.446 110.686 2.134 111.138C1.826 111.59 1.67 112.154 1.666 112.83ZM0.999995 120.079L8.79399 120.079L8.794 117.061L9.64 117.061L9.63999 123.979L8.79399 123.979L8.79399 120.961L0.999995 120.961L0.999995 120.079ZM0.819994 127.942C0.819994 127.338 0.919994 126.794 1.11999 126.31C1.32399 125.83 1.61199 125.432 1.98399 125.116C2.35599 124.804 2.79799 124.6 3.30999 124.504L3.45999 125.404C2.89999 125.548 2.45999 125.852 2.13999 126.316C1.82399 126.78 1.66599 127.334 1.66599 127.978C1.66599 128.402 1.73199 128.782 1.86399 129.118C1.99999 129.454 2.19199 129.718 2.43999 129.91C2.68799 130.102 2.98199 130.198 3.32199 130.198C3.54599 130.198 3.73599 130.158 3.89199 130.078C4.05199 129.998 4.18399 129.892 4.28799 129.76C4.39199 129.628 4.47799 129.484 4.54599 129.328C4.61799 129.172 4.67599 129.02 4.71999 128.872L5.37399 126.682C5.44999 126.418 5.54599 126.174 5.66199 125.95C5.78199 125.726 5.92399 125.53 6.08799 125.362C6.25599 125.198 6.45199 125.07 6.67599 124.978C6.89999 124.886 7.15599 124.84 7.44399 124.84C7.93199 124.84 8.354 124.968 8.71 125.224C9.06599 125.48 9.33999 125.83 9.53199 126.274C9.72399 126.718 9.81799 127.224 9.814 127.792C9.81399 128.368 9.71199 128.882 9.50799 129.334C9.30399 129.79 9.01199 130.166 8.63199 130.462C8.25599 130.758 7.80999 130.954 7.29399 131.05L7.12599 130.126C7.50199 130.066 7.82799 129.928 8.10399 129.712C8.37999 129.496 8.59199 129.22 8.73999 128.884C8.89199 128.552 8.96999 128.186 8.974 127.786C8.974 127.398 8.90799 127.052 8.77599 126.748C8.64799 126.448 8.47199 126.21 8.24799 126.034C8.02399 125.858 7.76799 125.77 7.47999 125.77C7.18799 125.77 6.95399 125.85 6.77799 126.01C6.60199 126.174 6.46399 126.374 6.36399 126.61C6.26399 126.85 6.18199 127.082 6.11799 127.306L5.61999 128.998C5.57199 129.174 5.50199 129.38 5.40999 129.616C5.32199 129.856 5.19399 130.088 5.02599 130.312C4.86199 130.54 4.64599 130.728 4.37799 130.876C4.10999 131.024 3.76999 131.098 3.35799 131.098C2.95799 131.098 2.59999 131.018 2.28399 130.858C1.96799 130.702 1.70199 130.48 1.48599 130.192C1.26999 129.908 1.10599 129.574 0.993994 129.19C0.877994 128.81 0.819994 128.394 0.819994 127.942Z"
+              fill="#03839E"
+              class="header__path"
+            >
+
+            </path>
+          </svg>
+
+          <svg
+            width="8"
+            height="45"
+            viewBox="0 0 8 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.64645 44.3536C3.84171 44.5488 4.15829 44.5488 4.35355 44.3536L7.53553 41.1716C7.7308 40.9763 7.7308 40.6597 7.53553 40.4645C7.34027 40.2692 7.02369 40.2692 6.82843 40.4645L4 43.2929L1.17157 40.4645C0.976311 40.2692 0.659728 40.2692 0.464466 40.4645C0.269204 40.6597 0.269204 40.9763 0.464466 41.1716L3.64645 44.3536ZM3.5 0L3.5 44H4.5L4.5 0L3.5 0Z"
+              fill="#03839E"
+              class="header__path"
+            >
+            </path>
+          </svg>
+            
+        </a>
+
+        <img
+          src="./images/header.jpg"
+          alt="img"
+          class="header__img grid__item grid__item--7-12"
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="about" id="about">
+        <div class="container about__wrapper grid">
+
+          <h2 class="about__title grid__ite grid__item--1-3">For whom?</h2>
+
+          <a href="#" class="about__right grid__ite grid__item--12-12">
+
+            <svg
+              width="1"
+              height="66"
+              viewBox="0 0 1 66"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="0.998047"
+                width="65"
+                height="1"
+                transform="rotate(90 1 0.998047)"
+                fill="#828282"
+                class="about__path"
+              >
+              </rect>
+            </svg>
+
+
+            <svg
+              width="10"
+              height="60"
+              viewBox="0 0 10 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.4 0.490047L9.4 2.43405C9.4 3.09005 9.224 3.58205 8.872 3.91005C8.52 4.23805 8.004 4.40205 7.324 4.40205L6.496 4.40205C5.816 4.40205 5.3 4.23805 4.948 3.91005C4.596 3.58205 4.42 3.09005 4.42 2.43405L4.42 1.81005L1 1.81005L1 0.490047L9.4 0.490047ZM5.62 2.43405C5.62 2.65005 5.68 2.81005 5.8 2.91405C5.92 3.02605 6.124 3.08205 6.412 3.08205L7.408 3.08205C7.696 3.08205 7.9 3.02605 8.02 2.91405C8.14 2.81005 8.2 2.65005 8.2 2.43405L8.2 1.81005L5.62 1.81005L5.62 2.43405ZM0.88 9.66695C0.88 9.01895 1.064 8.52295 1.432 8.17895C1.8 7.83495 2.32 7.66295 2.992 7.66295L7.408 7.66295C8.08 7.66295 8.6 7.83495 8.968 8.17895C9.336 8.52295 9.52 9.01895 9.52 9.66695C9.52 10.315 9.336 10.811 8.968 11.155C8.6 11.499 8.08 11.671 7.408 11.671L2.992 11.671C2.32 11.671 1.8 11.499 1.432 11.155C1.064 10.811 0.88 10.315 0.88 9.66695ZM2.08 9.66695C2.08 10.123 2.356 10.351 2.908 10.351L7.492 10.351C8.044 10.351 8.32 10.123 8.32 9.66695C8.32 9.21095 8.044 8.98295 7.492 8.98295L2.908 8.98295C2.356 8.98295 2.08 9.21095 2.08 9.66695ZM8.2 16.1888L8.2 14.8088L9.4 14.8088L9.4 18.8888L8.2 18.8888L8.2 17.5088L1 17.5088L1 16.1888L8.2 16.1888ZM9.4 22.1679L9.4 24.1239C9.4 24.8039 9.24 25.2999 8.92 25.6119C8.608 25.9239 8.124 26.0799 7.468 26.0799L6.952 26.0799C6.08 26.0799 5.528 25.7919 5.296 25.2159L5.272 25.2159C5.176 25.5359 4.98 25.7599 4.684 25.8879C4.388 26.0239 3.992 26.0919 3.496 26.0919L2.02 26.0919C1.78 26.0919 1.584 26.0999 1.432 26.1159C1.288 26.1319 1.144 26.1719 1 26.2359L1 24.8919C1.136 24.8439 1.264 24.8119 1.384 24.7959C1.504 24.7799 1.72 24.7719 2.032 24.7719L3.568 24.7719C3.952 24.7719 4.22 24.7079 4.372 24.5799C4.524 24.4599 4.6 24.2479 4.6 23.9439L4.6 23.4879L1 23.4879L1 22.1679L9.4 22.1679ZM5.8 23.9679C5.8 24.2319 5.868 24.4279 6.004 24.5559C6.14 24.6919 6.368 24.7599 6.688 24.7599L7.336 24.7599C7.64 24.7599 7.86 24.7039 7.996 24.5919C8.132 24.4879 8.2 24.3199 8.2 24.0879L8.2 23.4879L5.8 23.4879L5.8 23.9679ZM9.4 34.2096L9.4 36.1536C9.4 36.8096 9.224 37.3016 8.872 37.6296C8.52 37.9576 8.004 38.1216 7.324 38.1216L6.496 38.1216C5.816 38.1216 5.3 37.9576 4.948 37.6296C4.596 37.3016 4.42 36.8096 4.42 36.1536L4.42 35.5296L1 35.5296L1 34.2096L9.4 34.2096ZM5.62 36.1536C5.62 36.3696 5.68 36.5296 5.8 36.6336C5.92 36.7456 6.124 36.8016 6.412 36.8016L7.408 36.8016C7.696 36.8016 7.9 36.7456 8.02 36.6336C8.14 36.5296 8.2 36.3696 8.2 36.1536L8.2 35.5296L5.62 35.5296L5.62 36.1536ZM0.880001 43.3865C0.880001 42.7385 1.064 42.2425 1.432 41.8985C1.8 41.5545 2.32 41.3825 2.992 41.3825L7.408 41.3825C8.08 41.3825 8.6 41.5545 8.968 41.8985C9.336 42.2425 9.52 42.7385 9.52 43.3865C9.52 44.0345 9.336 44.5305 8.968 44.8745C8.6 45.2185 8.08 45.3905 7.408 45.3905L2.992 45.3905C2.32 45.3905 1.8 45.2185 1.432 44.8745C1.064 44.5305 0.880001 44.0345 0.880001 43.3865ZM2.08 43.3865C2.08 43.8425 2.356 44.0705 2.908 44.0705L7.492 44.0705C8.044 44.0705 8.32 43.8425 8.32 43.3865C8.32 42.9305 8.044 42.7025 7.492 42.7025L2.908 42.7025C2.356 42.7025 2.08 42.9305 2.08 43.3865ZM8.2 49.9083L8.2 48.5283L9.4 48.5283L9.4 52.6083L8.2 52.6083L8.2 51.2283L1 51.2283L1 49.9083L8.2 49.9083ZM0.880001 57.6034C0.880001 56.9634 1.06 56.4794 1.42 56.1514C1.788 55.8234 2.312 55.6594 2.992 55.6594L3.472 55.6594L3.472 56.9074L2.896 56.9074C2.352 56.9074 2.08 57.1354 2.08 57.5914C2.08 57.8154 2.144 57.9834 2.272 58.0954C2.408 58.2154 2.624 58.2754 2.92 58.2754C3.272 58.2754 3.58 58.1954 3.844 58.0354C4.116 57.8754 4.44 57.5794 4.816 57.1474C5.296 56.6034 5.728 56.2234 6.112 56.0074C6.504 55.7914 6.944 55.6834 7.432 55.6834C8.096 55.6834 8.608 55.8514 8.968 56.1874C9.336 56.5234 9.52 57.0114 9.52 57.6514C9.52 58.2834 9.336 58.7594 8.968 59.0794C8.608 59.4074 8.088 59.5714 7.408 59.5714L7.06 59.5714L7.06 58.3234L7.492 58.3234C7.78 58.3234 7.988 58.2674 8.116 58.1554C8.252 58.0434 8.32 57.8794 8.32 57.6634C8.32 57.2234 8.052 57.0034 7.516 57.0034C7.212 57.0034 6.928 57.0834 6.664 57.2434C6.4 57.4114 6.08 57.7114 5.704 58.1434C5.224 58.6954 4.788 59.0754 4.396 59.2834C4.004 59.4914 3.544 59.5954 3.016 59.5954C2.328 59.5954 1.8 59.4234 1.432 59.0794C1.064 58.7434 0.880001 58.2514 0.880001 57.6034Z"
+                fill="#828282"
+                class="about__path"
+              >
+              </path>
+            </svg>
+              
+              
+          </a>
+
+
+          <div class="about__card card card--1 grid__item grid__item--1-11">
+
+            <img
+              src="./images/about1.jpg"
+              alt="img"
+              class="card__img grid__item grid__item--1-5"
+            >
+
+            <div class="card__info grid__item grid__item--7-12">
+
+              <p class="card__subtitle grid__item grid__item--1-2 s4">* &nbsp; &nbsp; &nbsp; &nbsp;Robust</p>
+
+              <h2 class="card__num grid__item grid__item--1-1">/1</h2>
+
+              <h2 class="card__title grid__item grid__item--2-6">For those who value durable things/</h2>
+
+              <p class="card__text s4 grid__item grid__item--2-5">Don’t worry if you happen to knock your POTR on the floor, unlike a traditional ceramic pot it will take the fall in its stride.</p>
+
+            </div>
+          </div>
+
+          <div class="about__card card card--2 grid__item grid__item--1-5">
+
+            <img
+              src="./images/about2.jpg"
+              alt="img"
+              class="card__img grid__item grid__item--2-4"
+            >
+
+            <div class="card__info grid__item grid__item--1-5">
+
+              <p class="card__subtitle grid__item grid__item--1-2 s4">* &nbsp; &nbsp; &nbsp; &nbsp;Beautiful </p>
+
+              <h2 class="card__num grid__item grid__item--2-2">/2</h2>
+
+              <h2 class="card__title grid__item grid__item--2-5">For those who love modern design/</h2>
+
+              <p class="card__text s4 grid__item grid__item--2-5">We strived to achieve something that would look beautiful in your home while being incredibly functional and intuitive to use.</p>
+
+            </div>
+          </div>
+
+          <div class="about__card card card--3 grid__item grid__item--8-12">
+
+            <img
+              src="./images/about3.jpg"
+              alt="img"
+              class="card__img grid__item grid__item--1-5"
+            >
+
+            <div class="card__info grid__item grid__item--1-5">
+
+              <p class="card__subtitle grid__item grid__item--1-2 s4">* &nbsp; &nbsp; &nbsp; &nbsp;Saves time</p>
+
+              <h2 class="card__num grid__item grid__item--1-1">/3</h2>
+
+              <h2 class="card__title grid__item grid__item--2-5">For those who don't have enough time to regular water indoor plants/</h2>
+
+              <p class="card__text s4 grid__item grid__item--2-5">Water is drawn up through the cotton by the plant using tried and tested wicking technology. It’s particularly useful if you aren’t able to water them yourself on a regular basis!</p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container features__wrapper grid">
+
+          <img
+            src="./images/features-title.jpg"
+            alt="title"
+            class="features__title grid__item grid__item--1-6"
+          >
+
+          <img
+            src="./images/fetures-mobile.jpg"
+            alt="title"
+            class="features__mobile grid__item grid__item--1-2"
+          >
+
+          <div class="features__card grid__item grid__item--1-4">
+            
+            <img
+              src="./images/f1.jpg"
+              alt="img"
+              class="features__img"
+            >
+
+            <h3 class="features__subtitle">Flat pack postage</h3>
+
+            <p class="features__text s4">The pots will be shipped flat packed so they can be slipped through your letter box</p>
+
+          </div>
+
+          <div class="features__card grid__item grid__item--5-8">
+            
+            <img
+              src="./images/f2.jpg"
+              alt="img"
+              class="features__img"
+            >
+
+            <h3 class="features__subtitle">Easy assembly</h3>
+
+            <p class="features__text s4">POTR Pots are super easy (and super satisfying) to assemble using the quick draw cotton cord</p>
+
+          </div>
+
+          <div class="features__card grid__item grid__item--9-12">
+            
+            <img
+              src="./images/f3.jpg"
+              alt="img"
+              class="features__img"
+            >
+
+            <h3 class="features__subtitle">Self-watering</h3>
+
+            <p class="features__text s4">Simply add water into the pot — if your plant is thirsty it will automatically start drinking the water through the cotton cord. Magic!</p>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container team__wrapper grid">
+
+          <h2 class="team__title grid__item grid__item--1-6">Meet the POTR team!</h2>
+
+          <img
+            src="./images/Martin.svg"
+            alt="martin"
+            class="team__martin"
+          >
+
+          <img
+            src="./images/Andy.svg"
+            alt="andy"
+            class="team__andy"
+          >
+
+          <p class="team__text s4 grid__item grid__item--1-4">Andy and Martin are experienced product designers with a love of plants and the environment. They have over ten years combined industry experience in bringing products to market at some of the worlds largest consumer product companies.
+
+            <br><br>
+
+            Having studied Product Design Engineering together at the Glasgow School of Art, they have a long history of working as a team on a variety of design projects.
+          </p>
+
+          <img
+            src="./images/team.jpg"
+            alt="img"
+            class="team__img grid__item grid__item--5-11"
+          >
+
+        </div>
+      </section>
+
+      <section class="materials" id="materials">
+        <div class="container materials__wrapper grid">
+
+          <h1 class="materials__title grid__item grid__item--1-9">Materials and <br> Features</h1>
+
+          <div class="materials__info grid__item grid__item--8-12">
+            <p class="materials__subtitle s4">Environmentally friendly</p>
+
+            <p class="materials__text s4">All materials used in our pots are made from 100% recycled materials and are 100% recyclable at the end of life (should you ever choose to get rid of your POTR!). All materials have been sourced from within Europe to reduce our carbon footprint when transporting the raw materials, and all manufacturing is carried out in the UK.</p>
+          </div>
+
+
+          <!-- 1 -->
+
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="materials__plus materials__plus--1"
+            id="plus1"
+          >
+            <circle
+              cx="25.5"
+              cy="25.5"
+              r="25.5"
+              fill="#EB5757"
+              class="materials__circle"
+            >
+            </circle>
+            <rect
+              x="20"
+              y="26"
+              width="1"
+              height="11"
+              transform="rotate(-90 20 26)"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+            <rect
+              x="25"
+              y="20"
+              width="1" 
+              height="11"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+          </svg>
+
+          <div class="materials__popup materials__popup--1 s4" id="popup1">
+            We have chosen Bobbiny recycled cotton cord to use as our draw string and wicking cord. Not only is it 100% recycled, it looks great and works really well at wicking water. 
+          </div>
+
+
+          <!-- 2 -->
+
+
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="materials__plus materials__plus--2"
+            id="plus2"
+          >
+            <circle
+              cx="25.5"
+              cy="25.5"
+              r="25.5"
+              fill="#EB5757"
+              class="materials__circle"
+            >
+            </circle>
+            <rect
+              x="20"
+              y="26"
+              width="1"
+              height="11"
+              transform="rotate(-90 20 26)"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+            <rect
+              x="25"
+              y="20"
+              width="1" 
+              height="11"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+          </svg>
+
+          <div class="materials__popup materials__popup--2 s4" id="popup2">
+            We have chosen Bobbiny recycled cotton cord to use as our draw string and wicking cord. Not only is it 100% recycled, it looks great and works really well at wicking water. 
+          </div>
+
+
+          <!-- 3 -->
+
+
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="materials__plus materials__plus--3"
+            id="plus3"
+          >
+            <circle
+              cx="25.5"
+              cy="25.5"
+              r="25.5"
+              fill="#EB5757"
+              class="materials__circle"
+            >
+            </circle>
+            <rect
+              x="20"
+              y="26"
+              width="1"
+              height="11"
+              transform="rotate(-90 20 26)"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+            <rect
+              x="25"
+              y="20"
+              width="1" 
+              height="11"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+          </svg>
+
+          <div class="materials__popup materials__popup--3 s4" id="popup3">
+            We have chosen Bobbiny recycled cotton cord to use as our draw string and wicking cord. Not only is it 100% recycled, it looks great and works really well at wicking water. 
+          </div>
+
+          <!-- 4 -->
+
+
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="materials__plus materials__plus--4"
+            id="plus4"
+          >
+            <circle
+              cx="25.5"
+              cy="25.5"
+              r="25.5"
+              fill="#EB5757"
+              class="materials__circle"
+            >
+            </circle>
+            <rect
+              x="20"
+              y="26"
+              width="1"
+              height="11"
+              transform="rotate(-90 20 26)"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+            <rect
+              x="25"
+              y="20"
+              width="1" 
+              height="11"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+          </svg>
+
+          <div class="materials__popup materials__popup--4 s4" id="popup4">
+            We have chosen Bobbiny recycled cotton cord to use as our draw string and wicking cord. Not only is it 100% recycled, it looks great and works really well at wicking water. 
+          </div>
+
+          <!-- 5 -->
+
+
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="materials__plus materials__plus--5"
+            id="plus5"
+          >
+            <circle
+              cx="25.5"
+              cy="25.5"
+              r="25.5"
+              fill="#EB5757"
+              class="materials__circle"
+            >
+            </circle>
+            <rect
+              x="20"
+              y="26"
+              width="1"
+              height="11"
+              transform="rotate(-90 20 26)"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+            <rect
+              x="25"
+              y="20"
+              width="1" 
+              height="11"
+              fill="#E0E0E0"
+              class="materials__path"
+            >
+            </rect>
+          </svg>
+
+          <div class="materials__popup materials__popup--5 s4" id="popup5">
+            We have chosen Bobbiny recycled cotton cord to use as our draw string and wicking cord. Not only is it 100% recycled, it looks great and works really well at wicking water. 
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="size">
+        <div class="container size__wrapper grid">
+
+          <h2 class="size__title grid__item grid__item--1-7">Which size POTR for my house plant ? </h2>
+
+          <p class="size__subtitle s4 grid__item grid__item--1-3">Pre potted plants come in fairly standard sized pots, and can be classified into one of two categories:</p>
+
+          <div class="size__large grid__item grid__item--4-6">
+            <h4 class="size__h4">large</h4>
+            <p class="size__p s4">Large POTR Pot = 14cm diameter (1.5 litre) house plant pot or less</p>
+          </div>
+
+          <div class="size__small grid__item grid__item--4-6">
+            <h4 class="size__h4">Small</h4>
+            <p class="size__p s4">Small POTR Pot = 10cm diameter (0.49 litre) house plant pot or less</p>
+          </div>
+
+          <img
+            src="./images/size.jpg"
+            alt="img"
+            class="size__img grid__item grid__item--7-12"
+          >
+
+          <p class="size__text grid__item grid__item--1-6 s4">* POTR Pots have a little bit of give around the top rim so can fit slightly larger sizes than the recommended sizes stated above if necessary.</p>
+
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="container cards__wrapper grid">
+
+          <div class="cards__text cards__text--1 grid__item grid__item--6-8">
+
+            <p class="cards__title s1-36 ">
+
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cards__svg"
+              >
+                <rect
+                  y="5.07312"
+                  width="7.17433"
+                  height="7.17433"
+                  transform="rotate(-45 0 5.07312)"
+                  fill="#4F4F4F"
+                >
+                </rect>
+              </svg>
+
+              Easy assembly
+              
+            </p>
+
+            <p class="cards__subtitle s3">Pull the draw string to assemble!</p>
+          </div>
+
+          <div class="cards__text cards__text--2 grid__item grid__item--9-12">
+
+            <p class="cards__title s1-36 ">
+
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cards__svg"
+              >
+                <rect
+                  y="5.07312"
+                  width="7.17433"
+                  height="7.17433"
+                  transform="rotate(-45 0 5.07312)"
+                  fill="#4F4F4F"
+                >
+                </rect>
+              </svg>
+
+              Flat pack postage 
+
+            </p>
+
+            <p class="cards__subtitle s3">Add water to POTR and watch your plant drink!</p>
+          </div>
+
+          <div class="cards__text cards__text--3 grid__item grid__item--6-8">
+
+            
+
+            <p class="cards__title s1-36 ">
+
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cards__svg"
+              >
+                <rect
+                  y="5.07312"
+                  width="7.17433"
+                  height="7.17433"
+                  transform="rotate(-45 0 5.07312)"
+                  fill="#4F4F4F"
+                >
+                </rect>
+              </svg>
+
+              Self-watering
+            </p>
+
+            <p class="cards__subtitle s3">Add water to POTR and watch your plant drink!</p>
+          </div>
+
+          <a href="#" class="button cards__button buttontext grid__item grid__item--6-8">
+            <span>
+              BUY NOW &nbsp;
+              <svg
+                width="26"
+                height="8"
+                viewBox="0 0 26 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                  fill="black"
+                  class="button__svg"
+                >
+                </path>
+              </svg>
+            </span>
+          </a>
+
+          <p class="cards__off s1-36 grid__item grid__item--7-8">50% off</p>
+
+          <h3 class="cards__subtext grid__item grid__item--7-12">Get the second order in half price</h3>
+
+          <img
+            src="./images/cards-circle.png"
+            alt="img"
+            class="cards__circle grid__item grid__item--10-12"
+          >
+
+          <img
+            src="./images/card1.png"
+            alt="card"
+            class="cards__card cards__card--1"
+          >
+
+          <img
+            src="./images/card2.jpg"
+            alt="card"
+            class="cards__card cards__card--2"
+          >
+
+          <img
+            src="./images/card3.png"
+            alt="card"
+            class="cards__card cards__card--3"
+          >
+
+          <img
+            src="./images/card4.jpg"
+            alt="card"
+            class="cards__card cards__card--4"
+          >
+
+          <img
+            src="./images/card5.png"
+            alt="card"
+            class="cards__card cards__card--5"
+          >
+
+          <img
+            src="./images/card6.png"
+            alt="card"
+            class="cards__card cards__card--6"
+          >
+
+        </div>
+      </section>
+
+      <section class="questions" id="message">
+        <div class="container questions__wrapper grid">
+
+          <h2 class="questions__title grid__item grid__item--1-4">have any questions?</h2>
+
+          <p class="questions__subtitle grid__item grid__item--1-3 s4">Here few ways to get in touch with us:</p>
+
+          <p class="questions__message s2 grid__item grid__item--1-2">Message us</p>
+
+          <form
+            action="#"
+            class="questions__form grid__item grid__item--1-4"
+            id="form"
+          >
+
+            <label for="name1">
+              <input
+                type="text"
+                class="questions__input s4"
+                id="name1"
+                placeholder="Name"
+                required
+              >
+            </label>
+
+            <label for="email1">
+              <input
+                type="email"
+                class="questions__input s4"
+                id="email1"
+                placeholder="Email"
+                required
+              >
+            </label>
+
+            <label for="messages">
+              <input
+                type="text"
+                class="questions__input s4"
+                id="messages"
+                placeholder="Message"
+                required
+              >
+            </label>
+
+          </form>
+
+          <button
+            form="form"
+            href="#"
+            class="questions__button s3 grid__item grid__item--2-3"
+          >
+            Submit
+          </button>
+
+          <div class="questions__info grid__item grid__item--7-9">
+
+            <div class="questions__item grid__item grid__item--7-9">
+              <p class="questions__info-title s2">Our phone</p>
+              <a href="tel:+7 098 454 56 34" class="questions__text s3">+7 098 454 56 34</a>
+            </div>
+
+            <div class="questions__item">
+              <p class="questions__info-title s2">Our email</p>
+              <a href="mailto:potrpots@gmail.com" class="questions__text s3">potrpots@gmail.com</a>
+            </div>
+
+            <div class="questions__item">
+              <p class="questions__info-title s2">Our office</p>
+              <a
+                href="https://goo.gl/maps/71mJaKtr4fxijLxi6"
+                class="questions__text s3"
+                target="_blank"
+              >
+                United Kingdom  99 Staple Hill Road, Bristol, BS16 5AD
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container footer__wrapper grid">
+        
+        <div class="footer__adress grid__item grid__item--1-2">
+
+          <h3 class="footer__title">Adrress</h3>
+
+          <a
+          href="https://goo.gl/maps/71mJaKtr4fxijLxi6"
+          class="footer__text s3"
+          target="_blank"
+          >
+            United Kingdom  99 Staple Hill Road, Bristol, BS16 5AD
+          </a>
+        </div>
+
+        <div class="footer__about grid__item grid__item--11-12">
+
+          <h3 class="footer__title">aBOUT uS</h3>
+
+          <a
+          href="#"
+          class="footer__text s3"
+          target="_blank"
+          >
+          Copyright © 2019
+          </a>
+        </div>
+
+        <div class="footer__socials grid__item grid__item--5-8">
+              
+          <a
+            href="https://twitter.com/"
+            class="footer__svg"
+            target="_blank"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 0C4.48602 0 0 4.48602 0 10C0 15.5136 4.48602 20 10 20C15.5136 20 20 15.5136 20 10C20 4.48602 15.5144 0 10 0ZM14.461 7.71127C14.4655 7.81036 14.4679 7.91026 14.4679 8.01015C14.4679 11.0517 12.1534 14.5577 7.91871 14.5577C6.61887 14.5577 5.40885 14.1779 4.39056 13.5245C4.57061 13.5459 4.75389 13.5568 4.93958 13.5568C6.01829 13.5568 7.01039 13.1886 7.79828 12.5715C6.79127 12.553 5.94095 11.8875 5.64811 10.9728C5.78829 10.9994 5.93289 11.0143 6.08072 11.0143C6.29058 11.0143 6.4944 10.9869 6.68734 10.9341C5.63442 10.723 4.8413 9.79296 4.8413 8.67719C4.8413 8.66753 4.8413 8.65746 4.8417 8.64819C5.15186 8.82019 5.50673 8.92411 5.88375 8.93579C5.26666 8.52373 4.86023 7.81882 4.86023 7.02046C4.86023 6.59832 4.97341 6.20277 5.17159 5.86281C6.30629 7.2557 8.0029 8.17167 9.91541 8.26835C9.87594 8.09957 9.8562 7.92435 9.8562 7.74349C9.8562 6.47265 10.8866 5.44188 12.1574 5.44188C12.8196 5.44188 13.417 5.72142 13.8375 6.16853C14.3624 6.06542 14.8538 5.87449 15.2997 5.60984C15.1265 6.14759 14.7627 6.59832 14.2862 6.88351C14.7523 6.82792 15.197 6.70466 15.6082 6.52139C15.3013 6.9822 14.911 7.38782 14.461 7.71127Z"
+                fill="black"
+                class="footer__path"
+              >
+              </path>
+            </svg>
+          </a>
+              
+          <a
+            href="https://instagram.com/"
+            class="footer__svg"
+            target="_blank"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
+                fill="black"
+                class="footer__path"
+              >
+              </path>
+            </svg>
+          </a>
+
+          <a
+            href="https://facebook.com/"
+            class="footer__svg"
+            target="_blank"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 0C4.47727 0 0 4.47727 0 10C0 15.0136 3.69318 19.1532 8.50546 19.8764V12.6505H6.03136V10.0218H8.50546V8.27273C8.50546 5.37682 9.91636 4.10545 12.3232 4.10545C13.4759 4.10545 14.0855 4.19091 14.3741 4.23V6.52455H12.7323C11.7105 6.52455 11.3536 7.49318 11.3536 8.585V10.0218H14.3482L13.9418 12.6505H11.3536V19.8977C16.2345 19.2355 20 15.0623 20 10C20 4.47727 15.5227 0 10 0Z"
+                fill="black"
+                class="footer__path"
+              >
+              </path>
+            </svg>
+          </a>
+        </div>
+
+        <a href="#" class="footer__logo grid__item grid__item--6-7">
+          <img src="./images/Logo.svg" alt="logo">
+        </a>
+
+        <a
+          href="#"
+          class="footer__mobile s3 grid__item grid__item--1-2"
+          target="_blank"
+          >
+          Copyright © 2019
+        </a>
+        
+      </div>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/checkout.js"></script>
   </body>
 </html>

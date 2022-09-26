@@ -1,0 +1,110 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.footer {
+  padding: 74px 135px 64px;
+
+  @include laptop {
+    padding: 74px 50px 64px;
+  }
+
+  @include tablet {
+    padding: 0 30px 64px;
+  }
+
+  @include mobile {
+    padding: 0 34px 30px;
+
+    transform: translateY(-40%);
+  }
+
+  &__adress {
+    
+    @include tablet {
+      grid-column: 1 / 2;
+      width: 105%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    transition: $transition;
+    color: #000;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__about {
+    justify-self: end;
+
+    @include tablet {
+      grid-column: 5 / 7;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__socials {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    align-self: start;
+
+    @include tablet {
+      grid-column: 3 / 5;
+      width: 100%;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__path {
+    transition: $transition;
+  }
+
+  &__svg {
+    &:hover .footer__path {
+      fill: $red;
+    }
+  }
+
+  &__logo {
+
+    margin: 0 auto;
+    text-align: center;
+
+    @include tablet {
+      grid-column: 3 / 5;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include mobile {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
